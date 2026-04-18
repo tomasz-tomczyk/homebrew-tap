@@ -1,28 +1,28 @@
 class Crit < Formula
   desc "Browser-based markdown review tool with inline commenting"
   homepage "https://github.com/tomasz-tomczyk/crit"
-  version "0.9.2"
+  version "0.0.0-sapling-rc2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.9.2/crit-darwin-arm64"
-      sha256 "00d367e009d78e2e7bee22dca22847fcb10930e8605e23d4e6e604a22a78b5a2"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.0.0-sapling-rc2/crit-darwin-arm64"
+      sha256 "7990a138486ae19cba76946b4aa8c52d0372c5a6a8a5610d9295720c2bebf943"
     end
     on_intel do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.9.2/crit-darwin-amd64"
-      sha256 "85c2c8902942d0efbe702aa6bb50397e0479df48a32ac77af9a71e9cdb1ab0c1"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.0.0-sapling-rc2/crit-darwin-amd64"
+      sha256 "a8f0882f79e2c50388c0b5295b86d220e69beba670c1dc5233f7172fc7fdefcb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.9.2/crit-linux-arm64"
-      sha256 "d9954f54dc55667330ca95b73d5cf0cc6a234dd10f3e0479badf5c9a3d1a9154"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.0.0-sapling-rc2/crit-linux-arm64"
+      sha256 "b66b116a54b3fb6bf9ffaf2042fc978a777346ff5bc6fc014ab436e7d5ef22ec"
     end
     on_intel do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.9.2/crit-linux-amd64"
-      sha256 "281aa54bebf6f2d86769f4551949a20df7bab8e5c3ab79e4406588642a5801a2"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.0.0-sapling-rc2/crit-linux-amd64"
+      sha256 "086579eb29c9930667e25a7d135555be2bff842460d24972e710bd99905faa45"
     end
   end
 
@@ -32,6 +32,6 @@ class Crit < Formula
   end
 
   test do
-    assert_match "0.9.2", shell_output("#{bin}/crit --version").strip
+    assert_match "0.0.0-sapling-rc2", shell_output("#{bin}/crit --version").strip
   end
 end
