@@ -7,22 +7,22 @@ class Crit < Formula
   on_macos do
     on_arm do
       url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.10.0/crit-darwin-arm64"
-      sha256 "31f6f7a7f8f03c1cb56d76553734dee906caed23d59b2906d0ad7cb317d6e2b7"
+      sha256 "3350081673c0dc6844bb0f17a7e3d0adb25ab07f37aade38ddcd6624eaef32ad"
     end
     on_intel do
       url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.10.0/crit-darwin-amd64"
-      sha256 "fb93c121bb3ebc2df343dd8266df14ded3b182efd350bc2107a006887f7c8ace"
+      sha256 "7a60a1281bb66d70e64c95fc0e5637e664066b1d40f03cd35b7019391055a6d8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.10.0/crit-linux-arm64"
-      sha256 "af780f32bc30c0727ee9a3b731edba2194600c2aec058dce22e3e97c427c63a0"
+      sha256 "92a5b5c9a5b2c9718b7e52b99f124306b5b4efc0ce46287d08a33660b94d0586"
     end
     on_intel do
       url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.10.0/crit-linux-amd64"
-      sha256 "93cffc80081424373646f6e186194019bbdf520bb5b05fb175edcbe8061c5dfa"
+      sha256 "c86c4a5b18298e1d139407bddf7adce7e9a6fcf2918559739d377d7ed23e12fc"
     end
   end
 
