@@ -1,28 +1,28 @@
 class Crit < Formula
   desc "Browser-based markdown review tool with inline commenting"
   homepage "https://github.com/tomasz-tomczyk/crit"
-  version "0.20.2"
+  version "0.20.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.2/crit-darwin-arm64"
-      sha256 "c9ced30d3b55ba236257e9d2805c8f4bd94abe07c31e20a2f5c299d139d3468e"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.3/crit-darwin-arm64"
+      sha256 "83df98726dbbc85f6d84326d35e335cdbec2756b53b9710eeab92cc1b02334e6"
     end
     on_intel do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.2/crit-darwin-amd64"
-      sha256 "aebb605892658dda92fb2c248c87466073932fe6bdb3fa93411058cefef0498c"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.3/crit-darwin-amd64"
+      sha256 "30c2cd37d7534c51b111babf78f8f0abd7d7750d6d37bf237c3764241099777b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.2/crit-linux-arm64"
-      sha256 "833dd8145e5b47c06d88af80f8b6505159693742aadefcf400f923d7bc6c3b11"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.3/crit-linux-arm64"
+      sha256 "5a779fa202a1c7e8a1a6c5b05b4afa3a098b77c0c25103b0daf1d899f6d766ff"
     end
     on_intel do
-      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.2/crit-linux-amd64"
-      sha256 "d2907008164fada5bd5221ffd37ed125c181280cec3ed74465e526ea7d25d20a"
+      url "https://github.com/tomasz-tomczyk/crit/releases/download/v0.20.3/crit-linux-amd64"
+      sha256 "d3a348770e828f9f1710501735504107d1eccb195f29cacdffed92f75b6abba1"
     end
   end
 
@@ -32,6 +32,6 @@ class Crit < Formula
   end
 
   test do
-    assert_match "0.20.2", shell_output("#{bin}/crit --version").strip
+    assert_match "0.20.3", shell_output("#{bin}/crit --version").strip
   end
 end
